@@ -32,7 +32,9 @@ The data set contains statistical information about each match played: some of w
 With all this information we aim to predict the outcome of a game before it is finished.
 
 Below is a quick table of the information that may be useful for this procedure:
+
 <div class="table-wrapper" markdown="block">
+
 |    |   result |   team_winrate | side   |   firstblood |   firstdragon |   firstherald |   firsttower |   golddiffat10 |   xpdiffat10 |   csdiffat10 |   killsat10 |   golddiffat15 |   xpdiffat15 |   csdiffat15 |   killsat15 |   champion_high_wr |   champion_above_avg_wr |   champion_avg_wr |   champion_below_avg_wr |   champion_low_wr |
 |---:|---------:|---------------:|:-------|-------------:|--------------:|--------------:|-------------:|---------------:|-------------:|-------------:|------------:|---------------:|-------------:|-------------:|------------:|-------------------:|------------------------:|------------------:|------------------------:|------------------:|
 |  0 |        0 |       0.333333 | Blue   |            1 |             0 |             1 |            1 |           1523 |          137 |           -8 |           3 |            107 |        -1617 |          -23 |           5 |                  0 |                       0 |                 5 |                       0 |                 0 |
@@ -40,6 +42,7 @@ Below is a quick table of the information that may be useful for this procedure:
 |  2 |        1 |       0.333333 | Red    |            1 |             1 |             1 |            1 |           1396 |          883 |           12 |           4 |           2917 |           64 |           -2 |           5 |                  0 |                       3 |                 2 |                       0 |                 0 |
 |  3 |        0 |       0.333333 | Red    |            0 |             0 |             0 |            0 |          -1173 |         -561 |           -9 |           3 |          -3637 |        -1641 |          -38 |           6 |                  0 |                       2 |                 3 |                       0 |                 0 |
 |  4 |        1 |       0.333333 | Red    |            1 |             1 |             1 |            0 |            255 |          886 |           16 |           1 |             92 |         1076 |           -8 |           4 |                  0 |                       1 |                 4 |                       0 |                 0 |
+
 </div>
 
 # Baseline Model
@@ -56,7 +59,7 @@ We believe that this is a sub-optimal model. However, it is a good baseline mode
 
 Below is a small chart of the confusion matrix produced:
 
-<iframe src="assets/cfig1.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/cfig1.html" width=700 height=600 frameBorder=0></iframe>
 
 Here we can see the reletive predictions, and how well the model predicted wins vs loses. With a quick glance we can see false positives, and false negatives, occur at reletively the same rate.
 
@@ -92,7 +95,7 @@ The accuracy of our model greatly improved, going from 68% to 76%. This is a sig
 
 Below is another confusion matrix representative of the final model:
 
-<iframe src="assets/cfig2.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/cfig2.html" width=700 height=600 frameBorder=0></iframe>
 
 Here we can see the same trend as earlier, as well as a significant improvment in the performance of the model.
 
@@ -111,7 +114,7 @@ We then calculated the observed statistic to be 0.0002497, even though the diffe
 
 After the permutation testing we have the resulting histogram:
 
-<iframe src="assets/pfig1.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/pfig1.html" width=700 height=600 frameBorder=0></iframe>
 
 As one can see our observed statistic is in the middle, and this is asserted by its p-value of 0.484 on 1000 permutations.
 
