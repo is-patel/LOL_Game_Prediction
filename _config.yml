@@ -4,4 +4,4 @@ plugins:
 
 title: Predicting the Winning Team
 logo: /assets/icon.png
-description: DSC 80 Project - Ish Patel & Sahith Cherumandanda|[EDA on Data Set](https://is-patel.github.io/LOL_Data_Analysis/)
+description: DSC 80 Project - Ish Patel & Sahith Cherumandanda|<a href="https://is-patel.github.io/LOL_Data_Analysis/">[EDA on Data Set]</a>
